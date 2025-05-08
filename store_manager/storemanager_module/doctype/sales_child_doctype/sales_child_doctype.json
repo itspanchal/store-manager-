@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-07 16:47:53.720233",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "child_doctype_detail_section",
+  "products",
+  "quantity",
+  "rate",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "child_doctype_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Child doctype detail"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "quantity"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Rating",
+   "label": "rate"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "amount"
+  },
+  {
+   "fieldname": "products",
+   "fieldtype": "Link",
+   "label": "products",
+   "options": "Product Doctype"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-08 11:26:52.771605",
+ "modified_by": "Administrator",
+ "module": "StoreManager Module",
+ "name": "sales child doctype",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

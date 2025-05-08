@@ -1,0 +1,32 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-05-08 15:21:24.258971",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2025-05-08 17:20:45.921423",
+ "modified_by": "Administrator",
+ "module": "StoreManager Module",
+ "name": "Top 5 selling products report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \n    sc.products AS product,\n    SUM(sc.quantity) AS total_quantity_sold\nFROM \n    `tabsales child doctype` sc\nJOIN \n    `tabSales Invoice Doctype` si ON sc.parent = si.name\nWHERE \n    si.docstatus = 1  -- submitted invoices only\nGROUP BY \n    sc.products\nORDER BY \n    total_quantity_sold DESC\nLIMIT 5;\n\n",
+ "ref_doctype": "Sales Invoice Doctype",
+ "report_name": "Top 5 selling products report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Sales User"
+  }
+ ],
+ "timeout": 0
+}

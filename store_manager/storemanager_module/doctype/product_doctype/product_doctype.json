@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-07 16:26:23.498673",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "product_detail_section",
+  "name1",
+  "sku",
+  "price",
+  "quantity_in_stock",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Product detail"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": " name"
+  },
+  {
+   "fieldname": "sku",
+   "fieldtype": "Data",
+   "label": "sku"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "price"
+  },
+  {
+   "fieldname": "quantity_in_stock",
+   "fieldtype": "Data",
+   "label": "quantity_in_stock"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "is_active"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-08 11:24:02.147242",
+ "modified_by": "Administrator",
+ "module": "StoreManager Module",
+ "name": "Product Doctype",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
